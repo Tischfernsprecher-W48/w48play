@@ -1,0 +1,15 @@
+Source: w48play-0.0.1
+Section: unknown
+Priority: optional
+Maintainer: Sven Moennich <lan4lano@gmail.com>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.8
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/collab-maint/mkversion-0.0.1.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/mkversion-0.0.1.git
+
+Package: w48play-0.0.1
+Architecture: any
+Depends: ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

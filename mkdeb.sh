@@ -24,18 +24,22 @@ rm -rf $DSTDIR/.git
 
 cd $DSTDIR
 
-dh_make --indep --createorig --copyright gpl --yes
 
-rm debian/*.ex debian/*.EX debian/README.Debian debian/README.source 
+dch --fromdirname --empty This is a Debian package
+
+
+dh_make --indep --createorig --copyright gpl --yes
 
 cat <<EOF >debian/install
 $PROGRAMM usr/sbin
-sounds/* usr/share/w48play
 EOF
+
+
+
 
 debuild -us -uc
 
 cd ..
 cp *.deb $SRCDIR
 
-rm -rf $TMPDIR
+#rm -rf $TMPDIR
